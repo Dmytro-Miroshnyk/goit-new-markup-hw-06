@@ -48,7 +48,6 @@ img {
 }
 .container {
   width: 100%;
-  max-width: ;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -164,7 +163,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-background.jpg);
+    url(../images/hero-background-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -172,6 +171,17 @@ img {
   padding-bottom: 188px;
   max-width: 1440px;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-background-mob-x2.jpg);
+  }
 }
 .hero-title {
   color: var(--white-background-color);
@@ -304,7 +314,7 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px;
   justify-content: center;
 }
 .team-list-item {
@@ -431,20 +441,25 @@ img {
 }
 .container-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
+  justify-content: center;
+  text-align: center;
 }
 .footer-logo-text {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 footer .logo {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 17.5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo-white {
   color: var(--light-color);
 }
 .footer-text {
-  max-width: 264px;
+  max-width: 268px;
   color: var(--light-color);
   font-size: 16px;
   line-height: 1.5;
@@ -458,7 +473,7 @@ footer .logo {
   margin-bottom: 16px;
 }
 .footer-media {
-  margin-right: 80px;
+  margin-bottom: 72px;
 }
 .footer-social-list {
   display: flex;
@@ -493,12 +508,13 @@ footer .logo {
 }
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 .footer-label {
 }
 .footer-input {
-  width: 264px;
+  width: 300px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--white-background-color);
@@ -534,6 +550,9 @@ footer .logo {
   letter-spacing: 0.04em;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-button-svg {
   fill: var(--white-background-color);
