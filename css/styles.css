@@ -859,13 +859,16 @@ footer .logo {
 .mob-navigation-list {
   display: flex;
   flex-direction: column;
+
+  gap: 40px;
+  margin-bottom: 284px;
+}
+.mob-navigation-list-link {
   color: var(--dark-color);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  gap: 40px;
-  margin-bottom: 284px;
 }
 .mob-current {
   color: var(--pressed-state-color);
