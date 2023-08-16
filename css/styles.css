@@ -562,6 +562,9 @@ footer .logo {
 .footer-button:focus {
   background-color: var(--pressed-state-color);
 }
+
+/* MODAL */
+
 .backdrop {
   position: fixed;
   width: 100%;
@@ -573,7 +576,7 @@ footer .logo {
 }
 .modal {
   position: absolute;
-  width: 408px;
+  width: 300px;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
   background-color: var(--modal-background-color);
@@ -768,6 +771,86 @@ footer .logo {
 .modal-button:focus {
   background-color: var(--pressed-state-color);
 }
+
+/* MOBILE MENU */
+
+.modal-button-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: var(--accent-color, #e7e9fc);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  top: 24px;
+  right: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg-close {
+  position: absolute;
+  fill: var(--dark-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 22px;
+  top: 24px;
+  right: 16px;
+  background-color: inherit;
+  border: none;
+}
+.mob-menu-svg {
+  position: absolute;
+  stroke: var(--dark-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mob-menu {
+  position: absolute;
+  width: 300px;
+  min-height: 584px;
+ 
+}
+.mob-button-close {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: var(--accent-color, #e7e9fc);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  top: 24px;
+  right: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .portfolio {
   padding-top: 96px;
