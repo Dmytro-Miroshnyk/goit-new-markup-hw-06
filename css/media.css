@@ -233,11 +233,6 @@
   .footer-form {
     flex-wrap: nowrap;
   }
-  .footer-button {
-    justify-content: unset;
-    margin-left: unset;
-    margin-right: unset;
-  }
 }
 
 /* MODAL */
