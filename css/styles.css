@@ -180,7 +180,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero-background-mob-x2.jpg);
+      url(../images/hero-background-mob-2x.jpg);
   }
 }
 .hero-title {
@@ -901,26 +901,20 @@ footer .logo {
 /* PORTFOLIO */
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .portfolio-filter {
+  padding-right: 20px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   gap: 24px;
-  margin-bottom: 72px;
-}
-.portfolio-filter-button {
-  border-radius: 4px;
-  border: 1px solid var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 48px;
 }
 .portfolio-filter-button {
   display: flex;
-  padding: 12px 24px;
+  padding: 8px 16px;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
@@ -934,8 +928,11 @@ footer .logo {
   letter-spacing: 0.04em;
   cursor: pointer;
   border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
@@ -961,11 +958,14 @@ footer .logo {
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  gap: 48px;
   row-gap: 48px;
+  justify-content: center;
+
 }
 .portfolio-list-item {
+
 }
 .portfolio-link {
   display: block;
